@@ -1,0 +1,45 @@
+  /* Reset css */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+/* Variabler */
+:root {
+    --background-color: #0f3a5a;
+    --black-color: #071a2a;
+    --icon-color: #7bb1f1;
+    --map-color: #d2e1ff;
+    --accent-color: #ff005c;
+    --white-color: #ffffff;
+  }
+
+/* classes som kan genbruges */
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  
+  h3 {
+    padding-top: 10px;
+  }
+
+  
+  /* Font family */
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  
+    /* Denne lille kommando sørger for at man ikke kan overstrege noget på siderne */
+    user-select: none;
+  }
