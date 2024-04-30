@@ -1,14 +1,20 @@
-  /* Reset css */
+  
+/*------------------
+-----Reset css------
+----------------- */
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
+/*------------------
+-----Konstanter-----
+----------------- */
 
 /* Variabler */
 :root {
-    --background-color: #0f3a5a;asdas
+    --background-color: #0f3a5a;
     --black-color: #071a2a;
     --icon-color: #7bb1f1;
     --map-color: #d2e1ff;
@@ -42,3 +48,24 @@
     /* Denne lille kommando sørger for at man ikke kan overstrege noget på siderne */
     user-select: none;
   }
+
+
+/*------------------
+-------Header-------
+----------------- */
+
+
+/*------------------
+--------Main--------
+----------------- */
+
+
+/*------------------
+-------Footer-------
+----------------- */
+
+
+/*------------------
+---Media queries----
+----------------- */
+
