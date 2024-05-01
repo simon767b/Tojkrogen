@@ -9,10 +9,10 @@
   }
 
 /*------------------
------Konstanter-----
+-----Variabler-----
 ----------------- */
 
-/* Variabler */
+/* Farver */
 :root {
     --background-color: #0f3a5a;
     --black-color: #071a2a;
@@ -22,7 +22,7 @@
     --white-color: #ffffff;
   }
 
-/* classes som kan genbruges */
+/* Classes som kan genbruges */
   h1 {
     font-size: 3rem;
   }
