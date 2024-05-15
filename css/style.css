@@ -14,13 +14,25 @@
 
 /* Farver */
 :root {
-    --background-color: #0f3a5a;
-    --black-color: #071a2a;
-    --icon-color: #7bb1f1;
-    --map-color: #d2e1ff;
-    --accent-color: #ff005c;
-    --white-color: #ffffff;
+    --turkis: #A7D0E6;
+    --sand: #F7ECD0;
+    --lyserød: #DDCBC9;
+    --orange: #F69C3B;
+    --grøn: #007458;
+    --grå: #627A7F;
+    --hvid: #FFFFFF;
+    --sort: #000000;
   }
+
+/*farver, som kan bruges på forskellige fonte*/
+.grøn{
+  color: var(--grøn);
+}
+
+.turkis{
+  color: var(--turkis);
+}
+
 
 /* Classes som kan genbruges */
   h1 {
@@ -36,6 +48,30 @@
   
   h3 {
     padding-top: 10px;
+  }
+
+  .overskrift{
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 5dvw;
+  }
+
+  .prik{
+    color: var(--orange);
+  }
+
+  .under_overskrift{
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 2dvw;
+  }
+
+  .brodtekst{
+
   }
 
   
@@ -58,6 +94,262 @@
 /*------------------
 --------Main--------
 ----------------- */
+
+/*----forside---*/
+.forside_body{
+  background-color: var(--turkis);
+  user-select: none;
+  overflow: hidden;
+}
+
+/*gitteret i baggrunden*/
+#gitter{
+  width: 100%;
+  object-fit: fill;
+}
+
+/*kork brættet i baggrunden*/
+.kork{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60dvw;
+  height: 35dvw;
+  background-repeat: no-repeat;
+  background-size:cover;
+
+  background-image: url(../img/Forside/korkbræt.png);
+}
+
+/* den div alle ting på tavlen positionere sig efter*/
+.kork_wrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+/*de individuelle polaroid billeder*/
+#polaroid1{
+  width: 10dvw;
+  height: auto;
+
+  position: absolute;
+  top: 40%;
+  left: 10%;
+
+  /* animation */
+  transition: all 1s ease-in-out;
+}
+
+#polaroid2{
+  width: 10dvw;
+  height: auto;
+
+  position: absolute;
+  top: 30%;
+  left: 30%;
+
+  /* animation */
+  transition: all 1s ease-in-out;
+}
+
+#polaroid3{
+  width: 10dvw;
+  height: auto;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  /* animation */
+  transition: all 1s ease-in-out;
+}
+
+#polaroid4{
+  width: 10dvw;
+  height: auto;
+
+  position: absolute;
+  top: 30%;
+  left: 70%;
+
+  /* animation */
+  transition: all 1s ease-in-out;
+}
+
+#polaroid-logo{
+  width: 8dvw;
+  height: auto;
+
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+/* bordet og de ting der er på det*/
+#bord{
+position: absolute;
+bottom: 0px;
+left: 0px;
+width: 100dvw;
+height: 15dvh;
+}
+
+#blyanter{
+  width: 10dvw;
+  height: auto;
+
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+}
+
+#grammofon{
+  width: 15dvw;
+  height: auto;
+
+  position: absolute;
+  bottom: 10%;
+  right: 30%;
+}
+
+#portræt{
+  width: 15dvw;
+  height: auto;
+
+  position: absolute;
+  bottom: 5%;
+  right: 12%;
+
+  /* animation */
+  transition: all 1s ease-in-out;
+}
+
+#navneskilt{
+  width: 15dvw;
+  height: auto;
+
+  position: absolute;
+  bottom: 0%;
+  right: 20%;
+}
+
+#lookbook{
+  width: 13dvw;
+  height: auto;
+
+  position: absolute;
+  bottom: 1%;
+  left: 40%;
+
+  /* animation */
+  transition: all 1s ease-in-out;
+}
+
+/* væggen i venstre side*/
+#plakat{
+  width: 13dvw;
+  height: auto;
+
+  position: absolute;
+  top: 10%;
+  left: 2%;
+}
+
+#skilt{
+  width: 13dvw;
+  height: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 2%;
+
+  /* animation */
+  transition: all 1s ease-in-out;
+}
+
+
+/* væggen i højre side*/
+
+#abningstider{
+  width: 13dvw;
+  height: auto;
+
+  position: absolute;
+  top: 10%;
+  right: 2%;
+
+  /* animation */
+  transition: all 1s ease-in-out;
+}
+
+#rubiks{
+  width: 13dvw;
+  height: auto;
+
+  position: absolute;
+  top: 40%;
+  right: 0%;
+
+  /* animation */
+  transition: all 1s ease-in-out;
+}
+
+
+/* computer med video i*/
+.computer_wrapper{
+  width: fit-content;
+  height: fit-content;
+
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+}
+
+
+#skærm{
+  width: 15dvw;
+  height: auto;
+
+  position: relative;
+  bottom: 5%;
+  left: 15%;
+}
+
+#forside-video{
+  width: 8dvw;
+  height: 6dvw;
+  object-fit: cover;
+
+  /* positioneret den i midten af skærmen */
+  position: absolute;
+  top: 25%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* styling der skal bruges når man trykker på ting der skal forstørres */
+#forside-zoom{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  width: 55dvw;
+
+  /* animaiton */
+  transition: all 1s ease-in-out;
+}
+
 
 /*-----Outfit generator-----*/
 #outfit-generator{
@@ -153,3 +445,15 @@
 ---Media queries----
 ----------------- */
 
+@media only screen and (max-width: 1200px) {
+  /*------------------
+  ------Forside-------
+  ----------------- */
+
+  /* her ændres baggrundsgitteret så det passer på telefonen*/
+  #gitter{
+    height: 100dvh;
+    object-fit: cover;
+  }
+
+}
