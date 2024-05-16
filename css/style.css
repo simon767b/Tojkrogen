@@ -22,6 +22,7 @@
     --grå: #627A7F;
     --hvid: #FFFFFF;
     --sort: #000000;
+
   }
 
 /*farver, som kan bruges på forskellige fonte*/
@@ -36,6 +37,7 @@
 .orange{
   color: var(--orange);
 }
+
 
 
 /* Classes som kan genbruges */
@@ -605,6 +607,41 @@ height: 20dvh;
 
 
 
+
+/*--------------------------PAA INDKOBSTUR SIDE------------------------- */
+
+
+.paatur_body{
+  background-color: var(--sand);
+  user-select: none;
+  overflow: hidden;
+}
+
+#tyskland_overskrift {
+  font-family: "Paytone One", sans-serif;
+  color: var(--turkis);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4dvw;
+}
+
+.tyskland_wrapper {
+display: flex;
+}
+
+#varevogn {
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.tyskland_brodtekst { 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 36rem; 
+
+}
 /*------------------
 -------Footer-------
 ----------------- */
