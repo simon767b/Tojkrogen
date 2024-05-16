@@ -107,7 +107,7 @@
 --------Main--------
 ----------------- */
 
-/*----forside---*/
+/*--------------------------FORSIDE------------------------- */
 .forside_body{
   background-color: var(--turkis);
   user-select: none;
@@ -438,7 +438,7 @@ height: 15dvh;
   transition: all 1s ease-in-out;
 }
 
-/*-----Klædeksab-----*/
+/*--------------------------KLÆDESKAB------------------------- */
 header{
   display: flex;
   padding: 3dvh;
