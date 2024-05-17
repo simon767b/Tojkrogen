@@ -114,7 +114,6 @@ polaroid2.addEventListener("click", function() {
 polaroid3.addEventListener("click", function() {
     polaroid3.id = 'polaroid-animation'; 
         /*efter animationen kommer man ind på en ny side*/
-    window.location.href = "http://www.w3schools.com";
     setTimeout(() => {
         window.location.href = "http://www.w3schools.com";
     }, 1000);
