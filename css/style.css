@@ -22,7 +22,7 @@
     --grå: #627A7F;
     --hvid: #FFFFFF;
     --sort: #000000;
-    --lysturkis: #BFEAED
+
   }
 
 /*farver, som kan bruges på forskellige fonte*/
@@ -37,6 +37,7 @@
 .orange{
   color: var(--orange);
 }
+
 
 
 /* Classes som kan genbruges */
@@ -59,7 +60,6 @@
     font-family: "Spicy Rice", serif;
     font-weight: 400;
     font-style: normal;
-
     font-size: 4.5dvw;
   }
 
@@ -83,6 +83,7 @@
   }
 
   .brodtekst{
+    font-size: 2dvw;
   }
 
   
@@ -106,7 +107,7 @@
 --------Main--------
 ----------------- */
 
-/*----forside---*/
+/*--------------------------FORSIDE------------------------- */
 .forside_body{
   background-color: var(--turkis);
   user-select: none;
@@ -437,7 +438,7 @@ height: 15dvh;
   transition: all 1s ease-in-out;
 }
 
-/*-----Klædeksab-----*/
+/*--------------------------KLÆDESKAB------------------------- */
 header{
   display: flex;
   padding: 3dvh;
@@ -567,7 +568,6 @@ header{
   background-position: center;
   border-radius: 50%;
   scale: 1;
-  
 }
 
 .toj{
@@ -608,209 +608,41 @@ cursor: pointer;
 
 
 
-/*------------------
--------Bar----------
------------------ */
 
-/* -----baggrund -----*/
+/*--------------------------PAA INDKOBSTUR SIDE------------------------- */
 
-#baroverskrift {
-  color: var(--orange);
-  position: relative;
-  align-self: center;
+
+.paatur_body{
+  background-color: var(--sand);
+  user-select: none;
+  overflow: hidden;
 }
 
-.baggrund {
+#tyskland_overskrift {
+  font-family: "Paytone One", sans-serif;
+  color: var(--turkis);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4dvw;
+}
+
+.tyskland_wrapper {
+display: flex;
+}
+
+#varevogn {
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.tyskland_brodtekst { 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--lysturkis);
-  z-index: -1;
-  overflow: hidden;
-}
-.fliser {
-  height: 70vh;
-}
-.fliser img {
-  align-self: baseline;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-}
+  align-items: flex-end;
+  width: 36rem; 
 
-.barelements {
-  z-index: 2;
 }
-.skranke {
-  width: 100vw;
-  height: auto;
-  position: absolute;
-  left: 0;
-  top: 70%;
-  z-index: 1;
-  overflow: hidden;
-}
-.skranke img {
-  width: 100vw;
-  height: auto;
-}
-
-.ol {
-  width: 1vw;
-  height: auto;
-  position: absolute;
-  left: 12%;
-  top: 57%;
-  z-index: 2;
-}
-.ol img {
-  width: 8vw;
-  height: auto;
-}
-
-.billede {
-  width: 10vw;
-  height: auto;
-  position: absolute;
-  height: auto;
-  left: 22%;
-  top: 83%;
-  z-index: 2;
-}
-
-.billede img  {
-  width: 12vw;
-  height: auto;
-}
-
-.barsscreen {
-    position: absolute;
-    height: auto;
-    left: 45%;
-    top: 68%;
-    z-index: 2;
-  }
-
-  .barsscreen img {
-    width: 13vw;
-    height: auto;
-  }
-
-.businesscards {
-  position: absolute;
-    height: auto;
-    left: 50%;
-    top: 90%;
-    z-index: 2;
-}
-.businesscards img {
-  width: 16vw;
-  height: auto;
-}
-
-.gavekort {
-  position: absolute;
-    height: auto;
-    left: 64%;
-    top: 93%;
-    z-index: 2;
-}
-
-.gavekort img {
-  width: 9vw;
-  height: auto;
-}
-
-
-.artby {
-  height: auto;
-  display: flex;
-  align-items: baseline;
-  justify-content: baseline;
-  flex-direction: row;
-  position: absolute;
-  left: 75%;
-  top: 84.5%;
-  z-index: 2;
-}
-
-.artby img {
-  width: 6vw;
-}
-.barkopper {
-  height: 8vh;
-  width: 6vw;
-  z-index: 2;
-}
-
-
-.barplante {
-  position: absolute;
-    height: auto;
-    left: 82%;
-    top: 56%;
-    z-index: 2;
-}
-.barplante img {
-  width: 12vw; 
-  height: auto;
-}
-
-.køleskab {
-  position: absolute;
-  height: auto;
-  left: 1%;
-  top: 16%;
-  z-index: 0;
-}
-
-.køleskab img {
-  width: 22vw;
-  height: auto;
-}
-
-.barskilt img {
-  position: absolute;
-  height: auto;
-  left: 23%;
-  top: 20%;
-  z-index: 0;
-  width: 14vw;
-  height: auto;
-}
-.ølpriser img {
-  position: absolute;
-  height: auto;
-  left: 38%;
-  top: 20%;
-  z-index: 0;
-  width: 17vw;
-  height: auto;
-}
-.kaffepriser img {
-  position: absolute;
-  height: auto;
-  left: 60%;
-  top: 20%;
-  z-index: 0;
-  width: 17vw;
-  height: auto;
-}
-
-.vindue {
-  width: 5vw;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);;
-  border-left: solid 1vw #794A3A;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-}
-
-
 /*------------------
 -------Footer-------
 ----------------- */
