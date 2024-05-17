@@ -75,20 +75,14 @@
     font-size: 2dvw;
   }
 
-<<<<<<< HEAD
-  .brodtekst {
-=======
-  .hero-skrift{
+
+  .hero-skrift {
     position: absolute;
     top:6%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  .brodtekst{
->>>>>>> 8c6126dd0a895e2f2e06fe820316fe7d45b8b0a3
-
-  }
 
   
   /* Font family */
@@ -624,7 +618,7 @@ height: 20dvh;
   align-self: center;
 }
 
-.baggrund {
+.barbaggrund {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -674,7 +668,7 @@ height: 20dvh;
   height: auto;
 }
 
-.billede {
+.barbillede {
   width: 10vw;
   height: auto;
   position: absolute;
@@ -684,7 +678,7 @@ height: 20dvh;
   z-index: 2;
 }
 
-.billede img  {
+.barbillede img  {
   width: 12vw;
   height: auto;
 }
@@ -766,7 +760,7 @@ height: 20dvh;
   position: absolute;
   height: auto;
   left: 1%;
-  top: 16%;
+  top: 18%;
   z-index: 0;
 }
 
