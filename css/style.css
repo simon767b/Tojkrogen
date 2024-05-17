@@ -83,6 +83,14 @@
     transform: translate(-50%, -50%);
   }
 
+  .broedtekst{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.8dvw;
+  }
+
 
   
   /* Font family */
@@ -610,6 +618,69 @@ height: 20dvh;
 }
 
 /*----------------------------------------Paa tur------------------------------------------------*/
+
+/*når brødteksten er i højre side*/
+.paatur_body{
+  background-color: var(--sand);
+  width: 100%;
+}
+
+.paatur_body main{
+  background-color: var(--sand);
+}
+
+.paatur_tyskland_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+  height: fit-content;
+}
+
+.paatur_tyskland_wrapper div{
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.paatur_tyskland_wrapper div div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+#paatur_varevogn{
+  width: 40dvw;
+  float: left;
+}
+
+.paatur_polaroids{
+  width: 10dvw;
+}
+
+.paatur_billeder_ovenpå_hinanden{
+  position: relative;
+}
+
+/* billeder der stables ovenpåå hinanden*/
+#paatur_polaroid1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#paatur_polaroid2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 
