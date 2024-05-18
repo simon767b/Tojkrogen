@@ -185,6 +185,12 @@
   cursor: pointer;
 }
 
+/*hover animation*/
+#polaroid1:hover{
+  rotate: -5deg;
+  scale: 1.2;
+}
+
 #polaroid2{
   width: 10dvw;
   height: auto;
@@ -198,6 +204,11 @@
 
   /*musen ændre sig når man hover*/
   cursor: pointer;
+}
+/*hover animation*/
+#polaroid2:hover{
+  rotate: 5deg;
+  scale: 1.2;
 }
 
 #polaroid3{
@@ -215,8 +226,14 @@
   cursor: pointer;
 }
 
+/*hover animation*/
+#polaroid3:hover{
+  rotate: 5deg;
+  scale: 1.2;
+}
+
 #polaroid4{
-  width: 10dvw;
+  width: 11dvw;
   height: auto;
 
   position: absolute;
@@ -229,6 +246,12 @@
 
   /*musen ændre sig når man hover*/
   cursor: pointer;
+}
+
+/*hover animation*/
+#polaroid4:hover{
+  rotate: -5deg;
+  scale: 1.2;
 }
 
 #polaroid-animation{
