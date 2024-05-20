@@ -107,9 +107,6 @@ randomBtn.addEventListener("click", function() {
         toj[3].src = sko[skoNummer].image;
     }
 
-    
-
-
     andenPris();
   });
 

@@ -83,6 +83,14 @@
     transform: translate(-50%, -50%);
   }
 
+  .broedtekst{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.8dvw;
+  }
+
 
   
   /* Font family */
@@ -106,7 +114,18 @@
 ----------------- */
 
 /*-----------------------------------------Loading side-----------------------------------------------------*/
+.loading_wrapper{
+  width: 100%;
+  height: 100dvh;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loading_ol{
+  height: 60dvh;
+}
 
 
 
@@ -166,6 +185,12 @@
   cursor: pointer;
 }
 
+/*hover animation*/
+#polaroid1:hover{
+  rotate: -5deg;
+  scale: 1.2;
+}
+
 #polaroid2{
   width: 10dvw;
   height: auto;
@@ -179,6 +204,11 @@
 
   /*musen ændre sig når man hover*/
   cursor: pointer;
+}
+/*hover animation*/
+#polaroid2:hover{
+  rotate: 5deg;
+  scale: 1.2;
 }
 
 #polaroid3{
@@ -196,8 +226,14 @@
   cursor: pointer;
 }
 
+/*hover animation*/
+#polaroid3:hover{
+  rotate: 5deg;
+  scale: 1.2;
+}
+
 #polaroid4{
-  width: 10dvw;
+  width: 11dvw;
   height: auto;
 
   position: absolute;
@@ -210,6 +246,12 @@
 
   /*musen ændre sig når man hover*/
   cursor: pointer;
+}
+
+/*hover animation*/
+#polaroid4:hover{
+  rotate: -5deg;
+  scale: 1.2;
 }
 
 #polaroid-animation{
@@ -348,17 +390,64 @@ height: 15dvh;
   cursor: pointer;
 }
 
-#rubiks{
-  width: 13dvw;
+#hylde{
+  width: 18dvw;
   height: auto;
 
   position: absolute;
-  top: 40%;
+  top: 53%;
   right: 0%;
 
   /* animation */
   transition: all 1s ease-in-out;
 }
+
+#rubiks{
+  width: 9dvw;
+  height: auto;
+
+  position: absolute;
+  top: 36%;
+  right: 4%;
+
+}
+
+.facebook{
+  cursor: pointer;
+}
+
+.linkedin{
+  cursor: pointer;
+}
+
+.telefon{
+  cursor: pointer;
+}
+
+.carhart{
+  cursor: pointer;
+}
+
+.wwf{
+  cursor: pointer;
+}
+
+.instagram{
+  cursor: pointer;
+}
+
+.soundcloud{
+  cursor: pointer;
+}
+
+.youtube{
+  cursor: pointer;
+}
+
+.patagonia{
+  cursor: pointer;
+}
+
 
 
 /* computer med video i*/
@@ -367,7 +456,7 @@ height: 15dvh;
   height: fit-content;
 
   position: absolute;
-  top: 80dvh;
+  top: 83dvh;
   left: 20%;
   transform: translate(-50%, -50%);
 
@@ -510,19 +599,18 @@ header{
 #random{
   position: absolute;
   top: 12dvw;
-  right: 12dvw;
+  right: 8dvw;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E4E3E7;
-  border-radius: 50%;
+  background-image: linear-gradient(#FC7704, #FC7704, #FC7704, #D46200);
+  border-radius: 20px;
   padding: 8px;
   overflow: visible;
-  width: 60px;
   cursor: pointer;
 
-  aspect-ratio: 1 / 1;
+  color: #BFEAED;
 }
 
 .toj_wrapper{
@@ -610,6 +698,92 @@ height: 20dvh;
 }
 
 /*----------------------------------------Paa tur------------------------------------------------*/
+
+/*når brødteksten er i højre side*/
+.paatur_body{
+  background-color: var(--sand);
+  width: 100%;
+}
+
+.paatur_body main{
+  background-color: var(--sand);
+}
+
+.paatur_main{
+  display: flex;
+  flex-direction: column;
+  gap: 2dvw;
+}
+
+.paatur_tyskland_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+}
+
+.paatur_tyskland_wrapper div{
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.paatur_tyskland_wrapper div div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+#paatur_varevogn{
+  width: 40dvw;
+  float: left;
+}
+
+.paatur_polaroids{
+  width: 15dvw;
+}
+
+.paatur_billeder_ovenpå_hinanden{
+  position: relative;
+}
+
+/* vej med bil*/
+#paatur_vej{
+  position: absolute;
+  right: 2dvw;
+  top: 300px;
+
+  height: 800px;
+  width: 2dvw;
+
+  background-color: gray;
+}
+
+#paatur_bil_scroll{
+  position: fixed;
+  right: 2dvw;
+  top: 300px;
+
+  width: 40px;
+  rotate: -90deg;
+}
+
+
+/* billeder der stables ovenpåå hinanden*/
+#paatur_polaroid1{
+
+}
+
+#paatur_polaroid2{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 
@@ -824,8 +998,87 @@ height: 20dvh;
 
 
 
-/*------------------------------------------404-sider--------------------------------------------*/
+/*------------------------------------------404-side--------------------------------------------*/
+.not_bord{
+position: absolute;
+bottom: 0px;
+left: 0px;
+}
 
+#not_ol{
+  z-index: 111;
+  width: 6dvw;
+
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.not_fustage_wrapper{
+  position: absolute;
+  z-index: 222;
+  bottom: 10%;
+  left: 22%;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  height: fit-content;
+}
+
+.not_fustage_inner_wrapper{
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: fit-content;
+  width: fit-content;
+}
+
+#fustage{
+  z-index: 222;
+  bottom: 10%;
+  left: 31.5%;
+
+  width: 30dvw;
+}
+
+#tap{
+  position: absolute;
+
+  bottom: 80%;
+  right: 2%;
+
+  width: 3dvw;
+}
+
+#not_tekst{
+  position: absolute;
+  top: 37%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+#not_vaske{
+  background-color: #FAC900;
+  position: absolute;
+  left: 49.9%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 150;
+
+  width: 0.6dvw;
+  height: 2dvw;
+}
 
 
 
