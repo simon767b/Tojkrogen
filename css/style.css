@@ -945,8 +945,11 @@ height: 20dvh;
 }
 
 .koleskab img {
+  position: absolute;
   width: 22vw;
   height: auto;
+  left: 1%;
+  top: 18%;
 }
 
 .barskilt img {
