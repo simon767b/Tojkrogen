@@ -390,17 +390,64 @@ height: 15dvh;
   cursor: pointer;
 }
 
-#rubiks{
-  width: 13dvw;
+#hylde{
+  width: 18dvw;
   height: auto;
 
   position: absolute;
-  top: 40%;
+  top: 53%;
   right: 0%;
 
   /* animation */
   transition: all 1s ease-in-out;
 }
+
+#rubiks{
+  width: 9dvw;
+  height: auto;
+
+  position: absolute;
+  top: 36%;
+  right: 4%;
+
+}
+
+.facebook{
+  cursor: pointer;
+}
+
+.linkedin{
+  cursor: pointer;
+}
+
+.telefon{
+  cursor: pointer;
+}
+
+.carhart{
+  cursor: pointer;
+}
+
+.wwf{
+  cursor: pointer;
+}
+
+.instagram{
+  cursor: pointer;
+}
+
+.soundcloud{
+  cursor: pointer;
+}
+
+.youtube{
+  cursor: pointer;
+}
+
+.patagonia{
+  cursor: pointer;
+}
+
 
 
 /* computer med video i*/
@@ -409,7 +456,7 @@ height: 15dvh;
   height: fit-content;
 
   position: absolute;
-  top: 80dvh;
+  top: 83dvh;
   left: 20%;
   transform: translate(-50%, -50%);
 
@@ -552,19 +599,18 @@ header{
 #random{
   position: absolute;
   top: 12dvw;
-  right: 12dvw;
+  right: 8dvw;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E4E3E7;
-  border-radius: 50%;
+  background-image: linear-gradient(#FC7704, #FC7704, #FC7704, #D46200);
+  border-radius: 20px;
   padding: 8px;
   overflow: visible;
-  width: 60px;
   cursor: pointer;
 
-  aspect-ratio: 1 / 1;
+  color: #BFEAED;
 }
 
 .toj_wrapper{
@@ -663,13 +709,18 @@ height: 20dvh;
   background-color: var(--sand);
 }
 
+.paatur_main{
+  display: flex;
+  flex-direction: column;
+  gap: 2dvw;
+}
+
 .paatur_tyskland_wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
 
   width: 80%;
-  height: fit-content;
 }
 
 .paatur_tyskland_wrapper div{
@@ -694,23 +745,41 @@ height: 20dvh;
 }
 
 .paatur_polaroids{
-  width: 10dvw;
+  width: 15dvw;
 }
 
 .paatur_billeder_ovenpå_hinanden{
   position: relative;
 }
 
+/* vej med bil*/
+#paatur_vej{
+  position: absolute;
+  right: 2dvw;
+  top: 300px;
+
+  height: 800px;
+  width: 2dvw;
+
+  background-color: gray;
+}
+
+#paatur_bil_scroll{
+  position: fixed;
+  right: 2dvw;
+  top: 300px;
+
+  width: 40px;
+  rotate: -90deg;
+}
+
+
 /* billeder der stables ovenpåå hinanden*/
 #paatur_polaroid1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
 }
 
 #paatur_polaroid2{
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

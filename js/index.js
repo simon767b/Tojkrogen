@@ -68,7 +68,7 @@ portrat.addEventListener("click", function() {
 
     /*Brugeren føres over til en ny side*/
     setTimeout(() => {
-        window.location.href = "http://www.w3schools.com";
+        window.location.href = "mødos.html";
     }, 1000);
 });
 
@@ -84,7 +84,7 @@ lookbook.addEventListener("click", function() {
 
     /*Brugeren føres over til en ny side*/
     setTimeout(() => {
-        window.location.href = "http://www.w3schools.com";
+        window.location.href = "not_found.html";
     }, 1000);
 });
 
@@ -99,7 +99,7 @@ polaroid1.addEventListener("click", function() {
     polaroid1.id = 'polaroid-animation'; 
     /*efter animationen kommer man ind på en ny side*/
     setTimeout(() => {
-        window.location.href = "http://www.w3schools.com";
+        window.location.href = "paatur.html";
     }, 1000);
 });
 
@@ -107,7 +107,7 @@ polaroid2.addEventListener("click", function() {
     polaroid2.id = 'polaroid-animation'; 
         /*efter animationen kommer man ind på en ny side*/
     setTimeout(() => {
-        window.location.href = "http://www.w3schools.com";
+        window.location.href = "bar.html";
     }, 1000);
 });
 
@@ -115,7 +115,7 @@ polaroid3.addEventListener("click", function() {
     polaroid3.id = 'polaroid-animation'; 
         /*efter animationen kommer man ind på en ny side*/
     setTimeout(() => {
-        window.location.href = "http://www.w3schools.com";
+        window.location.href = "kladeskabet.html";
     }, 1000);
 });
 
@@ -127,3 +127,68 @@ polaroid4.addEventListener("click", function() {
     }, 1000);
 });
 
+
+/* links */
+const linkedin = document.getElementsByClassName("linkedin");
+const youtube = document.getElementsByClassName("youtube");
+const facebook = document.getElementsByClassName("facebook");
+const telefon = document.getElementsByClassName("telefon");
+const carhart = document.getElementsByClassName("carhart");
+const wwf = document.getElementsByClassName("wwf");
+const instagram = document.getElementsByClassName("instagram");
+const soundcloud = document.getElementsByClassName("soundcloud");
+const patagonia = document.getElementsByClassName("patagonia");
+
+for (let i = 0; i < facebook.length; i++) {
+facebook[i].addEventListener("click", function() {
+      window.location.href = "#";
+});
+};
+
+for (let i = 0; i < linkedin.length; i++) {
+linkedin[i].addEventListener("click", function() {
+      window.location.href = "#";
+});
+};
+
+for (let i = 0; i < telefon.length; i++) {
+telefon[i].addEventListener("click", function() {
+      window.location.href = "tel:31612629";
+});
+};
+
+for (let i = 0; i < carhart.length; i++) {
+carhart[i].addEventListener("click", function() {
+      window.location.href = "https://www.carhartt.com/gb/en-gb";
+});
+};
+
+for (let i = 0; i < wwf.length; i++) {
+wwf[i].addEventListener("click", function() {
+      window.location.href = "https://wwf.dk/";
+});
+};
+
+for (let i = 0; i < instagram.length; i++) {
+instagram[i].addEventListener("click", function() {
+      window.location.href = "https://www.instagram.com/toejkrogen/";
+});
+};
+
+for (let i = 0; i < soundcloud.length; i++) {
+soundcloud[i].addEventListener("click", function() {
+      window.location.href = "https://soundcloud.com/hugo-pecheur-744280348/sets/lo-fi-hip-hop-chillhop";
+});
+};
+
+for (let i = 0; i < youtube.length; i++) {
+youtube[i].addEventListener("click", function() {
+      window.location.href = "https://www.youtube.com/watch?v=RR7aP4U2L6o";
+});
+};
+
+for (let i = 0; i < patagonia.length; i++) {
+patagonia[i].addEventListener("click", function() {
+      window.location.href = "https://eu.patagonia.com/dk/en/shop/collections/new-arrivals?gad_source=1&gclid=Cj0KCQjw6auyBhDzARIsALIo6v_jhVA120bTTrWBdwSuUX0wJX1gqaKFrMtnrArPwMmlh4X92_0A3iUaAo_sEALw_wcB&gclsrc=aw.ds";
+});
+};
