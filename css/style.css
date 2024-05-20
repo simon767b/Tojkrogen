@@ -88,7 +88,7 @@
     font-weight: 400;
     font-style: normal;
 
-    font-size: 1.8dvw;
+    font-size: 1dvw;
   }
 
 
@@ -138,8 +138,8 @@
 
 /*gitteret i baggrunden*/
 #gitter{
-  width: 100%;
-  object-fit: fill;
+  width: 100dvw;
+  object-fit: cover;
 }
 
 /*kork brættet i baggrunden*/
@@ -152,6 +152,7 @@
   height: 35dvw;
   background-repeat: no-repeat;
   background-size:cover;
+  scale: 1;
 
   background-image: url(../img/Forside/korkbræt.png);
 }
@@ -390,12 +391,22 @@ height: 15dvh;
   cursor: pointer;
 }
 
+.forside_some{
+  position: absolute;
+  top: 36%;
+  right: 0%;
+
+  height: 20dvw;
+  width: 20dvw;
+  z-index: 0;
+}
+
 #hylde{
   width: 18dvw;
   height: auto;
 
   position: absolute;
-  top: 53%;
+  top: 51%;
   right: 0%;
 
   /* animation */
@@ -407,8 +418,9 @@ height: 15dvh;
   height: auto;
 
   position: absolute;
-  top: 36%;
-  right: 4%;
+  top: 10%;
+  right: 20%;
+
 
 }
 
@@ -448,25 +460,22 @@ height: 15dvh;
   cursor: pointer;
 }
 
-
-
 /* computer med video i*/
 .computer_wrapper{
+  top: 83dvh;
+
   width: fit-content;
   height: fit-content;
-
+  
   position: absolute;
-  top: 83dvh;
+  top: 85dvh;
   left: 20%;
   transform: translate(-50%, -50%);
-
+  
   z-index: 0;
-
+  
   /* animation */
   transition: all 1s ease-in-out;
-
-  /*musen ændre sig når man hover*/
-  cursor: pointer;
 } 
 
 .computer_wrapper_animation{
@@ -532,6 +541,9 @@ height: 15dvh;
 
 /*---------------------------------------------Klædeksab------------------------------------------------------*/
 header{
+  position: absolute;
+  left: 0;
+  top: 0;
   display: flex;
   padding: 3dvh;
 }
@@ -919,8 +931,20 @@ height: 20dvh;
   z-index: 2;
 }
 
-.artby img {
+#bar_artbymaria {
   width: 6vw;
+  height: auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: baseline;
+  flex-direction: row;
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  z-index: 111;
+  cursor: pointer;
+  /* animaiton */
+  transition: all 1s ease-in-out;
 }
 .barkopper {
   height: 8vh;
@@ -966,7 +990,8 @@ height: 20dvh;
   width: 14vw;
   height: auto;
 }
-.olpriser img {
+
+#olpriser {
   position: absolute;
   height: auto;
   left: 38%;
@@ -974,8 +999,12 @@ height: 20dvh;
   z-index: 0;
   width: 17vw;
   height: auto;
+  cursor: pointer;
+    /* animaiton */
+    transition: all 1s ease-in-out;
 }
-.kaffepriser img {
+
+#kaffepriser {
   position: absolute;
   height: auto;
   left: 60%;
@@ -983,6 +1012,23 @@ height: 20dvh;
   z-index: 0;
   width: 17vw;
   height: auto;
+  cursor: pointer;
+    /* animaiton */
+    transition: all 1s ease-in-out;
+}
+
+/*zoom*/
+#bar-zoom{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  width: 35dvw;
+
+  /* animaiton */
+  transition: all 1s ease-in-out;
 }
 
 .vindue {
@@ -1002,6 +1048,136 @@ height: 20dvh;
 
 
 /*------------------------------------------Vores værdier--------------------------------------------*/
+.vardier_butik{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.vardier_tekst1{
+  position: absolute;
+  top: 17%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 15dvw;
+}
+
+.vardier_tekst2{
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 15dvw;
+}
+
+.vardier_tekst3{
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 15dvw;
+}
+
+.vardier_tekst4{
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  width: 15dvw;
+}
+
+
+
+#vardier_forhæng{
+  position: absolute;
+  top: 56%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+
+  height: 70dvh;
+  width: 25dvw;
+}
+
+#vardier_toj1_1{
+  position: absolute;
+  top: 17%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  height: 13dvw;
+  z-index: 111;
+}
+
+/*tøj*/
+#vardier_toj1_2{
+  position: absolute;
+  top: 17%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  height: 13dvw;
+  z-index: 111;
+  width: 16dvw;
+}
+
+#vardier_toj1_3{
+  position: absolute;
+  top: 17%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  height: 13dvw;
+  z-index: 111;
+}
+
+#vardier_toj2_1{
+  position: absolute;
+  top: 43.5%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  height: 13dvw;
+  z-index: 111;
+  width: 16dvw;
+}
+
+#vardier_toj2_2{
+  position: absolute;
+  top: 43.5%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  height: 13dvw;
+  width: 16dvw;
+  z-index: 111;
+}
+
+#vardier_toj2_3{
+  position: absolute;
+  top: 43.5%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  height: 13dvw;
+  z-index: 111;
+}
+
+#vardier_toj3_1{
+  position: absolute;
+  top: 74%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  height: 13dvw;
+  z-index: 111;
+  width: 16dvw;
+}
+
+#vardier_toj3_2{
+  position: absolute;
+  top: 74%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  height: 13dvw;
+  z-index: 111;
+  width: 16dvw;
+}
 
 
 
@@ -1354,7 +1530,8 @@ p {
 ---Media queries----
 ----------------- */
 
-@media only screen and (max-width: 1200px) {
+/* tablet */
+@media only screen and (max-width: 800px) {
   /*------------------
   ------Forside-------
   ----------------- */
@@ -1362,8 +1539,64 @@ p {
   /* her ændres baggrundsgitteret så det passer på telefonen*/
   #gitter{
     height: 100dvh;
-    object-fit: cover;
   }
+
+  .computer_wrapper_animation{
+    top: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*------------------
+  ------Forside-------
+  ----------------- */
+
+  .forside_body{
+    background-color: var(--turkis);
+    user-select: none;
+    overflow: hidden;
+  }
+  /* her ændres baggrundsgitteret så det passer på telefonen*/
+  #gitter{
+    height: 100dvh;
+  }
+
+  /*zoom*/
+  #forside-zoom{
+    width: 95dvw;
+  }
+
+  /*kork brættet i baggrunden*/
+.kork{
+  top: 50%;
+  left: 82%;
+
+  scale: 2;
+}
+
+#plakat {
+  width: 18dvw;
+  top: 2%;
+  left: 5%;
+}
+
+#skilt {
+  width: 25dvw;
+  top: 65%;
+}
+
+#abningstider{
+  width: 25dvw;
+  left: 65%;
+  top: 3%;
+}
+
+.forside_some {
+  top: 62%;
+  width: fit-content;
+  scale: 2;
+}
+  
 
   /*Så computeren passer på alle skærmstørrelser*/
   .computer_wrapper{
@@ -1382,18 +1615,85 @@ p {
   } 
 
   .computer_wrapper_animation{
-    width: fit-content;
-    height: fit-content;
-  
-    position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-    z-index: 1000;
-  
-    /* animation */
-    transition: all 1s ease-in-out;
   }
+
+  /* bord*/
+  #bord {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200dvw;
+    height: 20dvh;
+  }
+
+  #portrat {
+    width: 30dvw;
+    bottom: 15%;
+    right: 5%;
+  }
+
+  #grammofon {
+    width: 30dvw;
+    bottom: 15%;
+    right: 35%;
+  }
+
+  .computer_wrapper {
+    scale: 2;
+  }
+
+  #blyanter {
+    width: 15dvw;
+    bottom: 15%;
+  }
+
+  #lookbook {
+    width: 30dvw;
+    top: 87%;
+  }
+
+  #navneskilt {
+  width: 25dvw;
+  bottom: 10%;
+  right: 5%;
+  }
+
+
+  /*------------------
+  ---Outfit generator--
+  ----------------- */
+  #random{
+    top: 35dvw;
+    right: 5dvw;
+  }
+
+  #total-pris{
+    right: 2dvw;
+    bottom: 20dvw;
+    padding: 20px 10px;
+  }
+
+  .small_icons{
+    width: 4dvw;
+  }
+
+  .toj {
+    height: 15dvh;
+  }
+  
+  .lille_toj {
+    height: 7dvh;
+  }
+
+  .toj_wrapper {
+  gap: 0dvw;
+  }
+
+  .onboarding3 {
+    position: absolute;
+    left: 1.5dvw;
+    bottom: 10dvh;
+    width: 20dvw;
+}
 
 }
