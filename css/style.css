@@ -703,6 +703,7 @@ height: 20dvh;
 .paatur_body{
   background-color: var(--sand);
   width: 100%;
+
 }
 
 .paatur_body main{
@@ -796,6 +797,10 @@ height: 20dvh;
   color: var(--orange);
   position: relative;
   align-self: center;
+}
+
+.barbody {
+  overflow: hidden;
 }
 
 .barbaggrund {
