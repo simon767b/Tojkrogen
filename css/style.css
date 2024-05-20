@@ -770,7 +770,7 @@ height: 20dvh;
   z-index: 0;
 }
 
-.køleskab img {
+.koleskab img {
   width: 22vw;
   height: auto;
 }
@@ -784,7 +784,7 @@ height: 20dvh;
   width: 14vw;
   height: auto;
 }
-.ølpriser img {
+.olpriser img {
   position: absolute;
   height: auto;
   left: 38%;
@@ -813,6 +813,11 @@ height: 20dvh;
   top: 0;
   z-index: 0;
 }
+
+
+
+
+
 
 /*------------------------------------------Vores værdier--------------------------------------------*/
 
