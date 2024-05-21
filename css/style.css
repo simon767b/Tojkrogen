@@ -85,9 +85,9 @@
 
   .broedtekst{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
-
+    line-height: 30px;
     font-size: 1dvw;
   }
 
@@ -722,16 +722,21 @@ height: 20dvh;
   background-color: var(--sand);
 }
 
-.paatur_main{
-  display: flex;
-  flex-direction: column;
-  gap: 2dvw;
-}
+
 
 .paatur_tyskland_wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
+  height: auto;
+}
+
+.paatur_tyskland_wrapper1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20vh;
   width: 90%;
   height: auto;
 }
@@ -781,8 +786,7 @@ height: 20dvh;
 
 .tursektion1 {
   display: flex;
-  justify-content: space-between;
-  width: 100vw;
+  width: 90vw;
   margin-top: 20px;
 }
 
@@ -791,12 +795,15 @@ height: 20dvh;
 }
 
 .turtekst1 p {
-  width: 40vw;
+  width: 30vw;
+  padding-left: -20vw;
+
 }
+
 
 #paatur_varevogn{
   position: relative;
-  width: 70dvw;
+  width: 50dvw;
   float: left;
   transform: translateY(-36%);
 }
@@ -868,6 +875,14 @@ height: 20dvh;
   z-index: 4;
 }
 
+.turbutikkenhjem {
+  position: absolute;
+  right: 1dvw;
+  top: 3650px;
+  z-index: 4;
+
+}
+
 .tree {
   rotate: -90deg;
   z-index: 10;
@@ -904,6 +919,21 @@ height: 20dvh;
   z-index: 4;
 }
 
+.polsevogn {
+  display: flex;
+  width: 2vw;
+  overflow: hidden;
+}
+
+.polsevogn img {
+  position: absolute;
+  right: 3.5dvw;
+  top: 1800px;
+  rotate: -90deg;
+  width: 5vw;
+  color: var(--orange);
+}
+
 .hamborgby {
   display: flex;
   width: 2vw;
@@ -918,6 +948,20 @@ height: 20dvh;
   width: 30vw;
 }
 
+.varehus {
+  display: flex;
+  width: 2vw;
+  overflow: hidden;
+}
+
+.varehus img {
+  position: absolute;
+  right: 3.5dvw;
+  top: 2500px;
+  rotate: -90deg;
+  width: 5vw;
+}
+
 /* Hamborg afsnit */
 
 #hamborgheader {
@@ -927,7 +971,9 @@ height: 20dvh;
   padding-left: -2vw;
 }
 
-
+#hamborgtekst {
+  width: 30vw;
+}
 
 .paatur_tyskland_wrappers_wrapper {
   padding-left: 10vw;
@@ -940,6 +986,7 @@ height: 20dvh;
 .pitstop {
   display: flex;
   flex-direction: row;
+  height: 60vh;
 }
 
 .pitstopheader {
@@ -963,8 +1010,8 @@ height: 20dvh;
   justify-content: flex-start;
   text-align: left;
 }
-.pitstopbrod {
-  width: 25vw;
+#pitstopbrod {
+  width: 30vw;
 }
 
 .pitstoppola {
@@ -1000,6 +1047,7 @@ height: 20dvh;
 .kilosalewrapper {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 .kilpola {
@@ -1025,8 +1073,8 @@ height: 20dvh;
 
 .warehouse {
   position: absolute;
-  left: 40%;
-  top: 340%;
+  left: 35%;
+  top: 315%;
 }
 
 .warehouse img {
@@ -1040,6 +1088,8 @@ height: 20dvh;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+
 }
 
 .turtekst3 {
@@ -1056,6 +1106,10 @@ height: 20dvh;
   line-height: 80px;
 }
 
+.hjemtekst {
+  width: 30vw;
+}
+
 .hjempola {
   transform: translateX(50%);
   transform: translateY(50%);
@@ -1064,7 +1118,7 @@ height: 20dvh;
 .hjemsvg {
   position: absolute;
   left: 30%;
-  top: 435%;
+  top: 400%;
 }
 
 .hjemsvg svg {
@@ -1648,13 +1702,11 @@ p {
 
 .ramme-duo {
   color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 1vw;
   z-index: 8;
   position: absolute;
   left: 6.5%;
   top: 104%;
-  font-weight: 400;
+  font-weight: 200;
   width: 30vw;
   line-height: 30px;
 }
@@ -1688,13 +1740,11 @@ p {
 
 .bondetekst {
   color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 1vw;
   z-index: 8;
   position: absolute;
   left: 6.5%;
   top: 175%;
-  font-weight: 400;
+  font-weight: 200;
   width: 26vw;
   line-height: 30px;
 }
@@ -1727,13 +1777,11 @@ p {
 
 .sluddertekst {
   color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 1vw;
   z-index: 8;
   position: absolute;
   left: 50%;
   top: 260%;
-  font-weight: 400;
+  font-weight: 200;
   width: 25vw;
   line-height: 30px;
 }
