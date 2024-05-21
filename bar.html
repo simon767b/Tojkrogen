@@ -15,15 +15,25 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!--link til funktionalitet og animation i form af javascript-->
-    <script src="js/index.js" defer></script>
+    <script src="js/bar.js" defer></script>
 
     <!--Tab tekst-->
     <title>Tøjkrogen | Bar</title>
 
     <!--Favicon-->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/img/Toej/logo-knap.svg">
 </head>
+
+
 <body class="barbody">
+
+    <!--tilbageknap som kan bruges flere steder-->
+    <header>
+        <a href="index.html">
+        <img src="img/Toej/logo-knap.svg" alt="logo knap" class="logo-knap">
+        </a>
+    </header>
+
    <div class="barbaggrund">
     <p class="overskrift" id="baroverskrift">EN TUR I BAREN.</p>
        <img class="fliser" src="img/Bar/Gitter.svg" alt="fliser">
@@ -47,10 +57,10 @@
        <div class="gavekort">
         <img src="img/Bar/gavekort.svg" alt="gavekort">
        </div>
-       <div class="artby">
-        <img class="barkopper" src="img/Bar/barkopper.png" alt="keramik">
-        <img src="img/Bar/Artby.svg" alt="ArtbyMaria">
-       </div>
+ 
+        <img class="barkopper artby" src="img/Bar/barkopper.png" alt="keramik">
+        <img src="img/Bar/Artby.svg" alt="ArtbyMaria" id="bar_artbymaria">
+
        <div class="barplante">
         <img src="img/Bar/plante.svg" alt="Monstera">
        </div>
@@ -63,12 +73,12 @@
 <div class="barskilt">
     <img src="img/Bar/barskilt.svg" alt="barskilt">
 </div>
-    <div class="olpriser">
-        <img src="img/Bar/olramme.svg" alt="prisskilt">
-    </div>
-    <div class="kaffepriser">
-        <img src="img/Bar/Kafferamme.svg" alt="prisskilt">
-    </div>
+
+        <img src="img/Bar/olramme.svg" alt="prisskilt" id="olpriser">
+
+
+        <img src="img/Bar/Kafferamme.svg" alt="prisskilt" id="kaffepriser">
+
     <div class="vindue"></div>
 </div>
    

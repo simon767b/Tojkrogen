@@ -1,5 +1,16 @@
 //Vi vil gerne have en funktion der gør det muligt at centrere og forstørre ting når man trykker på dem
 //Det skal fungere som en zoom effekt 
+let varetpasiden = false;
+
+//for at være sikker på at den læses fra ny hver gang
+(function () {
+  window.onpageshow = function(event) {
+      if (event.persisted) {
+          window.location.reload();
+      }
+  };
+})();
+
 
 //abningstider
 let abningstiderZoom = false;
@@ -68,7 +79,7 @@ portrat.addEventListener("click", function() {
 
     /*Brugeren føres over til en ny side*/
     setTimeout(() => {
-        window.location.href = "mødos.html";
+        window.location.href = "modos.hmtl";
     }, 1000);
 });
 
@@ -123,7 +134,7 @@ polaroid4.addEventListener("click", function() {
     polaroid4.id = 'polaroid-animation';
         /*efter animationen kommer man ind på en ny side*/ 
     setTimeout(() => {
-        window.location.href = "http://www.w3schools.com";
+        window.location.href = "vardier.html";
     }, 1000);
 });
 
