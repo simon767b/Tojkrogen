@@ -14,10 +14,10 @@
         <link rel="stylesheet" href="css/style.css">
     
         <!--link til funktionalitet og animation i form af javascript-->
-        <script src="js/paatur" defer></script>
+        <script src="js/paatur.js" defer></script>
     
         <!--Tab tekst-->
-        <title>Tøjkrogen | Forside</title>
+        <title>Tøjkrogen | På Tur</title>
     
         <!--Favicon-->
         <link rel="icon" type="image/x-icon" href="/img/Toej/logo-knap.svg">
@@ -35,30 +35,43 @@
 
     <!-- vej med bil ud i siden-->
     <div id="paatur_vej"></div>
+    <div id="striberpaavej"></div>
+    
+    <div class="turbutikken"><img src="img/paatur/butikken.png" alt=""></div>
     <img src="img/paatur/van2.png" alt="billede af bil" id="paatur_bil_scroll">
+    <div class="tree" id="tree1"><img src="img/paatur/treeswbranch.svg" alt=""></div>
+    <div class="tree" id="tree2"><img src="img/paatur/treeswbranch.svg" alt=""></div>
+    <div class="tree" id="tree3"><img src="img/paatur/treeswbranch.svg" alt=""></div>
+    <div class="tree" id="tree4"><img src="img/paatur/treesn.png" alt=""></div>
+    <div class="tree" id="tree5"><img src="img/paatur/treesn.png" alt=""></div>
+    <div class="hamborgby"><img src="img/paatur/hamborglogo.png" alt=""></div>
 
 
     <!--Overskrift-->
-    <p class="overskrift hero-skrift">På indkøbstur<span class="prik orange">.</span></p>
+    <div class="paaturheader">
+        <p class="overskrift hero-skrift hidden" id="shoppinghero">PÅ INDKØBSTUR<span class="prik orange">.</span></p>
 
+    </div>
+    
     <main class="paatur_main">
     <!--Her er første afsnit om turen går til tyskland-->
-        <div class="paatur_tyskland_wrapper">
-            <p class="under_overskrift turkis">Turen går til..</br></p>
-                <div>
+        <div class="paatur_tyskland_wrapper ">
+            <p class="under_overskrift turkis hidden" id="turentil">Turen går til..</br></p>
+            <p class="under_overskrift turkis hidden" id="tyskland">Tyskland!<span class="prik">.</span></p>
+                <div class="tursektion1 ">
                     <!--Varevogn svg-->
-                    <svg width="522" height="331" viewBox="0 0 522 331" fill="none" xmlns="http://www.w3.org/2000/svg" id="paatur_varevogn">
+                    <svg width="522" height="331" viewBox="0 0 522 331" fill="none" xmlns="http://www.w3.org/2000/svg" id="paatur_varevogn" class="hidden">
                     <path d="M-202.874 0.782959C-174.154 0.782959 210.243 0.782959 260.546 0.782959C310.823 0.782959 406.746 128.251 406.746 128.251C406.746 128.251 461.706 137.724 497.616 159.887C533.514 182.128 519.16 270.871 519.16 270.871H463.484C463.484 234.096 434.533 204.304 398.827 204.304C363.109 204.304 334.158 234.149 334.158 270.871H-61.8934C-61.8934 234.096 -90.8316 204.304 -126.537 204.304C-162.269 204.304 -191.22 234.149 -191.22 270.871H-246V108.104C-246 108.104 -231.633 0.782959 -202.874 0.782959ZM468.704 191.8H498.473V172.338H468.691L468.704 191.8ZM191.335 104.836H350.316C350.316 104.836 293.731 30.8645 266.789 30.8645C239.859 30.8645 191.335 30.8645 191.335 30.8645V104.836ZM34.145 104.836H159.006V30.8776H34.145V104.836ZM-103.228 103.98H18.7292V30.0212H-103.228V103.98ZM-118.503 104.836V30.8776H-193.932L-210.102 104.876L-118.503 104.836ZM-227.936 230.617H-217.881V108.078H-227.936V230.617ZM400.337 211.63C432.128 211.63 457.906 238.167 457.906 270.871C457.906 303.627 432.128 330.217 400.337 330.217C368.546 330.217 342.755 303.627 342.755 270.871C342.755 238.167 368.559 211.63 400.337 211.63ZM400.35 296.907C414.281 296.907 425.591 285.246 425.591 270.858C425.591 256.522 414.269 244.874 400.35 244.874C386.431 244.874 375.096 256.522 375.096 270.858C375.096 285.259 386.443 296.907 400.35 296.907ZM-124.734 211.63C-92.9808 211.63 -67.1898 238.167 -67.1898 270.871C-67.1898 303.627 -92.9808 330.217 -124.734 330.217C-156.486 330.217 -182.277 303.627 -182.277 270.871C-182.29 238.167 -156.499 211.63 -124.734 211.63ZM-124.734 296.907C-110.84 296.907 -99.467 285.246 -99.467 270.858C-99.467 256.522 -110.84 244.874 -124.734 244.874C-138.653 244.874 -149.987 256.522 -149.987 270.858C-149.949 285.259 -138.627 296.907 -124.734 296.907ZM330.102 276.458H-65.4243V295.88H330.102V276.458Z" fill="#FC7704"> 
                     </svg>
                     <!--tekst-->
-                    <div>
-                        <p class="under_overskrift turkis">Tyskland!<span class="prik">.</span></p>
-                        <p class="broedtekst">I hjertet af Århus mødes vi tidligt om morgenen, klar til vores episke eventyr. 
+                    <div class="turtekst1 ">
+                        <p class="broedtekst hidden">I hjertet af Århus mødes vi tidligt om morgenen, klar til vores episke eventyr. 
                             Med kolde colaer og masser af snacks pakker vi bilen, sikrer os, at vi har alt, hvad vi behøver, og føler os klar til at tage afsted. 
                             Spændingen er til at føle, og med vores rejsehumør og yndlingsmusikplayliste klar begiver vi os ud på vejen, klar til at udforske og skabe minder.</p>
                     </div>
                 </div>
-        </div>
+        </div>¨
+        
 
 
     <!--Her er andet afsnit om Hamburg-->
@@ -66,12 +79,12 @@
                 <div>
                     <div class="paatur_tyskland_wrappers_wrapper">
                         <!--tekst-->
-                        <p class="under_overskrift turkis">Hamburg<span class="prik">.</span></p>
-                        <p class="broedtekst">Med forventningsfulde smil begiver vi os ud på vejen mod Hamborg, fyldt med spænding over det, der venter os forude. 
+                        <p class="under_overskrift turkis" id="hamborgheader">Hamburg<span class="prik">.</span></p>
+                        <p class="broedtekst" id="hamborgtekst">Med forventningsfulde smil begiver vi os ud på vejen mod Hamborg, fyldt med spænding over det, der venter os forude. 
                             Vores bil snor sig gennem landskabet, mens vi deler historier og griner sammen, og det føles som om, at selv vejen er en del af vores eventyr.</p>
                     </div>
                     <!--Varevogn svg-->
-                    <div class="paatur_tyskland_wrappers_wrapper">
+                    <div class="paatur_tyskland_wrappers_wrapper" id="hamborgbilled">
                         <img src="img/paatur/hamburg1.png" alt="Hamburg, here we come" class="paatur_polaroids" id="paatur_polaroid1">
                         <img src="img/paatur/hamburg2.png" alt="Hello!" class="paatur_polaroids" id="paatur_polaroid2"> 
                     </div>
@@ -80,53 +93,60 @@
 
     <!--Her er tredje afsnit om pitstop-->
         <div class="paatur_tyskland_wrapper">
-                <div>
-                    <!--Varevogn svg-->
-                    <img src="img/paatur/pitstop.png" alt="Tid til en Bratwurst" class="paatur_polaroids">
-                    <!--pølse-->
-                    <svg width="221" height="200" viewBox="0 0 221 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.57 108.24C32.48 120.59 54.54 132.52 80.24 141.79C105.94 151.06 131.04 156.13 152 157.08C175.89 159.16 178.18 146.9 180.26 135.77C160.2 132.65 151.92 131.71 132.89 129.93C111.13 125.06 88.89 117.04 66.65 109.02C45.64 100.58 32.01 88.46 27.42 84.38C16.03 74.57 7.16 80.08 -1.63 85.55C3.02 98.44 16.57 108.24Z" fill="#F89E04"/>
-                        <path d="M171.4 136.59C171.89 137.86 172.05 139.26 171.76 140.83C169.47 153.09 145.56 151.01 124.61 150.07C99.52 144.99 73.82 135.73 48.12 126.46C26.06 114.52 10.15 102.18 16.57 108.24C32.48 120.59 54.54 132.52 80.24 141.79C105.94 151.06 131.04 156.13 152 157.08C175.89 159.16 178.18 146.9 179.06 142.16C175.93 138.87 171.4 136.59Z" fill="#E08F03"/>
-                        <path d="M32.01 88.46C30.6 87.22 28.56 85.44 26.16 83.72L22.26 90.61C20.59 93.56 21.9 97.19 25.2 98.7C28.49 100.22 32.51 99.05 34.18 96.1L36.46 92.08C34.91 90.91 33.41 89.71 32.01 88.46Z" fill="#E08F03"/>
-                    </svg>
-                    <!--tekst-->
-                    <div>
-                        <p class="under_overskrift turkis">Et “lille” pitstop<span class="prik">.</span></p>
-                        <p class="broedtekst">....men ikke uden først at have planlagt et uundværligt pitstop - en kæmpe Bratwurst med ekstra karryketchup! Efter at have nydt denne delikatesse, fortsætter vi mod Flensborg, hvor et stort varehus venter på os.</p>
+                <section>
+                    <div class="pitstop">
+                        <div class="pitstopbilleder">
+                            <div class="pitstoppola">
+                            <img src="img/paatur/pitstop.png" alt="Tid til en Bratwurst" class="paatur_polaroids">
+                        </div>
+                            <!--pølse-->
+                            <div class="polser">
+                                <img src="img/paatur/polser.svg" alt="">
+                            </div>
+                            
+                            <!--tekst-->
+                        </div>
+                    <div class="pitstoptekst">
+                        <p class="under_overskrift grøn pitstopheader">Et “lille” pitstop<span class="prik">.</span></p>
+                        <p class="broedtekst" id="pitstopbrod">....men ikke uden først at have planlagt <br> et uundværligt pitstop - en kæmpe Bratwurst <br> med ekstra karryketchup! Efter at have nydt <br> denne delikatesse, fortsætter vi mod Flensborg, <br> hvor et stort varehus venter på os.</p>
                     </div>
-                </div>
+                </section>
         </div>
 
     <!--Her er fjerde afsnit om kilo sale-->
-        <div class="paatur_tyskland_wrapper">
-            <div>
-                <div>
+        <div class="kilosalewrapper">
+                <div class="turtekst2">
                     <!--tekst-->
-                    <p class="under_overskrift turkis">Kilo sale warehouse<span class="prik">.</span></p>
+                    <p class="under_overskrift turkis kilosaleheader">Kilo sale warehouse<span class="prik">.</span></p>
                     <p class="broedtekst">I det store varehus går vi på opdagelse blandt de mange varer, der spænder fra tøj til accessories. 
                         Med omhu og kyndighed udvælger vi de mest unikke stykker, som vi føler vil tilføre vores butik en særlig charme og personlighed. Det er en proces fyldt med spænding og forventning, når vi navigerer gennem rækkerne af tøj og accessories, og gradvist fylder bilens bagagerum med vores nøje udvalgte fund. Hvert eneste stykke repræsenterer en historie, som vi er ivrige efter at dele med vores kunder derhjemme.</p>
                 </div>
                 <!--Varevogn svg-->
-                <img src="img/paatur/pakkebil.png" alt="Pakke bilen" class="paatur_polaroids">
-                <img src="img/paatur/browse.png" alt="Browse" class="paatur_polaroids">
-                <img src="img/paatur/warehouse_svgrepo.com.png" alt="Warehouse" class="paatur_polaroids">
-            </div>
+                <div class="kilopola">
+                    <img src="img/paatur/pakkebil.png" alt="Pakke bilen" class="paatur_polaroids pakkebil">
+                    <img src="img/paatur/browse.png" alt="Browse" class="paatur_polaroids browse">
+                </div>
+        </div>
+        <div class="warehouse">
+            <img src="img/paatur/warehouse_svgrepo.com.png" alt="Warehouse" class="paatur_polaroids">
         </div>
 
     <!--Her er fjerde afsnit om kilo sale-->
-        <div class="paatur_tyskland_wrapper">
-            <div>
-                <div>
+        <div class="hjemadwrapper">
+                <div class="turtekst3">
                     <!--tekst-->
-                    <p class="under_overskrift turkis">.... And  back home!<span class="prik">.</span></p>
-                    <p class="broedtekst">Med vores skattekiste fuld vender vi bilen hjemad og gør os klar til at dele vores nye fund med vores fantastiske kunder i butikken. Eventyret er kun lige begyndt!</p>
+                    <p class="under_overskrift turkis hjemheader">.... And  back home!<span class="prik">.</span></p>
+                    <p class="broedtekst hjemtekst">Med vores skattekiste fuld vender vi bilen hjemad og gør os klar til at dele vores nye fund med vores fantastiske kunder i butikken. Eventyret er kun lige begyndt!</p>
                 </div>
                 <!--Varevogn svg-->
+                <div class="hjempola">
                     <img src="img/paatur/home.png" alt="Home sweet home" class="paatur_polaroids">
-                    <svg width="153" height="145" viewBox="0 0 153 145" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M144.409 42.3053C138.687 42.3053 62.1079 42.3053 52.0866 42.3053C42.0705 42.3053 22.9608 65.6717 22.9608 65.6717C22.9608 65.6717 12.0118 67.4083 4.85776 71.471C-2.29372 75.5482 0.565851 91.8157 0.565851 91.8157H11.6575C11.6575 85.0744 17.4251 79.6132 24.5384 79.6132C31.6542 79.6132 37.4217 85.0841 37.4217 91.8157H116.323C116.323 85.0744 122.088 79.6132 129.201 79.6132C136.319 79.6132 142.087 85.0841 142.087 91.8157H153V61.9786C153 61.9786 150.138 42.3053 144.409 42.3053ZM10.6177 77.321H4.687V73.7535H10.6202L10.6177 77.321ZM65.8748 61.3795H34.2028C34.2028 61.3795 45.4755 47.8196 50.8429 47.8196C56.2078 47.8196 65.8748 47.8196 65.8748 47.8196V61.3795ZM97.1899 61.3795H72.3152V47.822H97.1899V61.3795ZM124.557 61.2225H100.261V47.665H124.557V61.2225ZM127.6 61.3795V47.822H142.627L145.849 61.3868L127.6 61.3795ZM149.401 84.4367H147.398V61.9737H149.401V84.4367ZM24.2376 80.9562C17.9043 80.9562 12.7687 85.8208 12.7687 91.8157C12.7687 97.8204 17.9043 102.695 24.2376 102.695C30.571 102.695 35.7091 97.8204 35.7091 91.8157C35.7091 85.8208 30.5685 80.9562 24.2376 80.9562ZM24.2351 96.5885C21.4596 96.5885 19.2066 94.4509 19.2066 91.8133C19.2066 89.1854 21.4622 87.0502 24.2351 87.0502C27.008 87.0502 29.2661 89.1854 29.2661 91.8133C29.2661 94.4533 27.0055 96.5885 24.2351 96.5885ZM128.842 80.9562C122.516 80.9562 117.378 85.8208 117.378 91.8157C117.378 97.8204 122.516 102.695 128.842 102.695C135.167 102.695 140.305 97.8204 140.305 91.8157C140.308 85.8208 135.17 80.9562 128.842 80.9562ZM128.842 96.5885C126.074 96.5885 123.808 94.4509 123.808 91.8133C123.808 89.1854 126.074 87.0502 128.842 87.0502C131.614 87.0502 133.873 89.1854 133.873 91.8133C133.865 94.4533 131.609 96.5885 128.842 96.5885ZM38.2297 92.8399H117.026V96.4001H38.2297V92.8399Z" fill="#794A3A"/>
-                    </svg>
-            </div>
+                </div>
+                    <div class="hjemsvg">
+                        <svg width="153" height="145" viewBox="0 0 153 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M144.409 42.3053C138.687 42.3053 62.1079 42.3053 52.0866 42.3053C42.0705 42.3053 22.9608 65.6717 22.9608 65.6717C22.9608 65.6717 12.0118 67.4083 4.85776 71.471C-2.29372 75.5482 0.565851 91.8157 0.565851 91.8157H11.6575C11.6575 85.0744 17.4251 79.6132 24.5384 79.6132C31.6542 79.6132 37.4217 85.0841 37.4217 91.8157H116.323C116.323 85.0744 122.088 79.6132 129.201 79.6132C136.319 79.6132 142.087 85.0841 142.087 91.8157H153V61.9786C153 61.9786 150.138 42.3053 144.409 42.3053ZM10.6177 77.321H4.687V73.7535H10.6202L10.6177 77.321ZM65.8748 61.3795H34.2028C34.2028 61.3795 45.4755 47.8196 50.8429 47.8196C56.2078 47.8196 65.8748 47.8196 65.8748 47.8196V61.3795ZM97.1899 61.3795H72.3152V47.822H97.1899V61.3795ZM124.557 61.2225H100.261V47.665H124.557V61.2225ZM127.6 61.3795V47.822H142.627L145.849 61.3868L127.6 61.3795ZM149.401 84.4367H147.398V61.9737H149.401V84.4367ZM24.2376 80.9562C17.9043 80.9562 12.7687 85.8208 12.7687 91.8157C12.7687 97.8204 17.9043 102.695 24.2376 102.695C30.571 102.695 35.7091 97.8204 35.7091 91.8157C35.7091 85.8208 30.5685 80.9562 24.2376 80.9562ZM24.2351 96.5885C21.4596 96.5885 19.2066 94.4509 19.2066 91.8133C19.2066 89.1854 21.4622 87.0502 24.2351 87.0502C27.008 87.0502 29.2661 89.1854 29.2661 91.8133C29.2661 94.4533 27.0055 96.5885 24.2351 96.5885ZM128.842 80.9562C122.516 80.9562 117.378 85.8208 117.378 91.8157C117.378 97.8204 122.516 102.695 128.842 102.695C135.167 102.695 140.305 97.8204 140.305 91.8157C140.308 85.8208 135.17 80.9562 128.842 80.9562ZM128.842 96.5885C126.074 96.5885 123.808 94.4509 123.808 91.8133C123.808 89.1854 126.074 87.0502 128.842 87.0502C131.614 87.0502 133.873 89.1854 133.873 91.8133C133.865 94.4533 131.609 96.5885 128.842 96.5885ZM38.2297 92.8399H117.026V96.4001H38.2297V92.8399Z" fill="#794A3A"/>
+                        </svg>
+                </div>           
         </div>
 
     </main>
