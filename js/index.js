@@ -1,3 +1,27 @@
+//splash loadig screen
+const olFyld = document.getElementById("loading_fyld_ol");
+const skum = document.getElementById("skum"); 
+const loadingScreen = document.getElementById("loading_screen"); 
+
+window.addEventListener("load", function() {
+    setTimeout(() => {
+    olFyld.style.transition = "3s all ease-in-out";
+    olFyld.setAttribute("d", "M276.805 540.217V110.439H-59.707V540.217H276.805Z")
+
+    skum.style.transition = "3s all ease-in-out";
+    skum.setAttribute("d", "M276.805 35.4496H-59.707V110.439H276.805V35.4496Z")
+    }, 1000);
+
+
+    setTimeout(() => {
+      loadingScreen.style.display = "none";
+    }, 4000);
+
+  });
+
+  
+//---------------------------resten af siden-------------------------------
+
 //Vi vil gerne have en funktion der gør det muligt at centrere og forstørre ting når man trykker på dem
 //Det skal fungere som en zoom effekt 
 let varetpasiden = false;
@@ -79,7 +103,7 @@ portrat.addEventListener("click", function() {
 
     /*Brugeren føres over til en ny side*/
     setTimeout(() => {
-        window.location.href = "modos.hmtl";
+        window.location.href = "modos.html";
     }, 1000);
 });
 
@@ -170,36 +194,36 @@ telefon[i].addEventListener("click", function() {
 
 for (let i = 0; i < carhart.length; i++) {
 carhart[i].addEventListener("click", function() {
-      window.location.href = "https://www.carhartt.com/gb/en-gb";
+      window.open("https://www.carhartt.com/gb/en-gb");
 });
 };
 
 for (let i = 0; i < wwf.length; i++) {
 wwf[i].addEventListener("click", function() {
-      window.location.href = "https://wwf.dk/";
+  window.open("https://wwf.dk/");
 });
 };
 
 for (let i = 0; i < instagram.length; i++) {
 instagram[i].addEventListener("click", function() {
-      window.location.href = "https://www.instagram.com/toejkrogen/";
+  window.open("https://www.instagram.com/toejkrogen/");
 });
 };
 
 for (let i = 0; i < soundcloud.length; i++) {
 soundcloud[i].addEventListener("click", function() {
-      window.location.href = "https://soundcloud.com/hugo-pecheur-744280348/sets/lo-fi-hip-hop-chillhop";
+  window.open("https://soundcloud.com/hugo-pecheur-744280348/sets/lo-fi-hip-hop-chillhop");
 });
 };
 
 for (let i = 0; i < youtube.length; i++) {
 youtube[i].addEventListener("click", function() {
-      window.location.href = "https://www.youtube.com/watch?v=RR7aP4U2L6o";
+  window.open("https://www.youtube.com/watch?v=RR7aP4U2L6o");
 });
 };
 
 for (let i = 0; i < patagonia.length; i++) {
 patagonia[i].addEventListener("click", function() {
-      window.location.href = "https://eu.patagonia.com/dk/en/shop/collections/new-arrivals?gad_source=1&gclid=Cj0KCQjw6auyBhDzARIsALIo6v_jhVA120bTTrWBdwSuUX0wJX1gqaKFrMtnrArPwMmlh4X92_0A3iUaAo_sEALw_wcB&gclsrc=aw.ds";
+  window.open("https://eu.patagonia.com/dk/en/shop/collections/new-arrivals?gad_source=1&gclid=Cj0KCQjw6auyBhDzARIsALIo6v_jhVA120bTTrWBdwSuUX0wJX1gqaKFrMtnrArPwMmlh4X92_0A3iUaAo_sEALw_wcB&gclsrc=aw.ds");
 });
 };

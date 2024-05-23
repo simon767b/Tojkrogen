@@ -6,13 +6,24 @@ const vaske = document.getElementById("not_vaske");
 const tekst = document.getElementById("not_tekst"); 
 
 tap.addEventListener("click", function() {
+  if (window.innerWidth > 600) { 
+    tekst.style.transition = "0.5s all ease-in-out";
+    tekst.style.opacity = ("0");
+
+    tap.style.transition = "2s all ease-in-out";
+    tap.style.rotate = ("90deg");
+    tap.style.bottom = ("70%");
+    tap.style.right = ("-8%"); 
+} else{
   tekst.style.transition = "0.5s all ease-in-out";
   tekst.style.opacity = ("0");
 
   tap.style.transition = "2s all ease-in-out";
   tap.style.rotate = ("90deg");
-  tap.style.bottom = ("70%");
+  tap.style.bottom = ("30%");
   tap.style.right = ("-8%");
+}
+  
 
   setTimeout(() => {
     vaske.style.transition = "2s all ease-in-out";
